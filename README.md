@@ -1,51 +1,92 @@
-# Nidhi Bhat — Portfolio
+# Nidhi Portfolio
 
-A cinematic, animated personal portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion.
+Nidhi's personal developer portfolio — an animated, dark-mode showcase of selected work, skills, hackathons, and ways to get in touch.
 
-## What's in it
+Built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
-- **Hero** — huge gradient name treatment + a custom animated avatar (cursor-parallax, scanline sweep, hover "detection readouts" that nod to the anomaly-detection work in MPLADS Sentinel)
-- **Marquee** — dual-direction scrolling strip of projects and stats
-- **About** — scroll-driven word reveal
-- **Skills** — grouped toolkit panels (Languages / AI+Data / Web+Backend / Tools)
-- **Work** — sticky, stacking project cards for the three featured projects, plus a grid of the rest
-- **Achievements** — hackathons and recognitions
-- **Contact** — email, resume download, GitHub/LinkedIn
+## Repository
 
-## Run it locally
+[github.com/the-nidhi-bhat/Nidhi-Portfolio](https://github.com/the-nidhi-bhat/Nidhi-Portfolio)
+
+## Run locally
 
 ```bash
+git clone https://github.com/the-nidhi-bhat/Nidhi-Portfolio.git
+cd Nidhi-Portfolio
 npm install
 npm run dev
 ```
 
-Then open the local URL it prints (usually `http://localhost:5173`).
+Vite prints a local URL, usually `http://localhost:5173`. Open it in your browser to view the portfolio.
 
 ## Build for production
 
 ```bash
 npm run build
-npm run preview   # to check the production build locally
+npm run preview
 ```
 
-The build output goes to `dist/`.
+The production-ready site is generated in `dist/`.
 
-## Deploy it (free, easy options)
+## Deploy
 
-**Vercel** (recommended, ~2 minutes):
-1. Push this folder to a GitHub repo.
-2. Go to vercel.com → "Add New Project" → import the repo.
-3. Framework preset: Vite. Leave build settings as default. Deploy.
+### Vercel
 
-**Netlify**: same flow — import the repo, build command `npm run build`, publish directory `dist`.
+1. Push this project to GitHub.
+2. Go to [Vercel](https://vercel.com/new) and import `the-nidhi-bhat/Nidhi-Portfolio`.
+3. Keep the detected Vite settings, then select **Deploy**.
 
-**GitHub Pages**: you already use this for other projects — you'd need to add a `base` path in `vite.config.ts` matching your repo name, then deploy the `dist/` folder with `gh-pages` or a GitHub Action.
+### Netlify
 
-## Customizing content
+1. Import the GitHub repository in [Netlify](https://app.netlify.com/start).
+2. Set the build command to `npm run build`.
+3. Set the publish directory to `dist`.
+4. Deploy the site.
 
-All the text content (bio, skills, projects, achievements, links) lives in one place:
-`src/data.ts` — edit that file to update anything without touching the components.
+### GitHub Pages
 
-To swap the avatar image, replace `src/assets/avatar.jpeg` (keep the same filename, or update the import in `src/components/Avatar.tsx`).
+For a project site at `https://the-nidhi-bhat.github.io/Nidhi-Portfolio/`, set Vite's base path before building:
 
-Your resume PDF is in `public/Nidhi_Resume.pdf` — replace it any time with an updated version, keeping the same filename, and the "Resume" button in the Contact section will keep working.
+```ts
+// vite.config.ts
+export default defineConfig({
+  base: '/Nidhi-Portfolio/',
+  plugins: [react()],
+})
+```
+
+Then deploy the generated `dist/` folder with a GitHub Actions workflow, or use Vercel/Netlify for the simplest deployment flow.
+
+## Customize
+
+- **Personal details, bio, links, projects, skills, achievements, and marquee cards:** edit [`src/data.ts`](src/data.ts)
+- **Hero, navigation, and section layouts:** edit the matching files in [`src/components`](src/components)
+- **Typography, color palette, gradients, and animations:** edit [`src/index.css`](src/index.css) and [`tailwind.config.js`](tailwind.config.js)
+- **Avatar image:** replace [`src/assets/avatar.png`](src/assets/avatar.png)
+- **Resume download:** replace [`public/Nidhi_Resume.pdf`](public/Nidhi_Resume.pdf), keeping the filename unchanged
+
+## Features
+
+- Animated hero with cursor-reactive avatar artwork
+- Scroll-reveal About section and animated project cards
+- Skills, featured work, hackathon achievements, and social links
+- Responsive desktop and mobile navigation
+- Reduced-motion support for a more accessible experience
+
+## Tech stack
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Fontshare (Clash Display and Switzer)
+
+## Scripts
+
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Starts the local development server |
+| `npm run build` | Type-checks and creates a production build |
+| `npm run preview` | Serves the production build locally |
