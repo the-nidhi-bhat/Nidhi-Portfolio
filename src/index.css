@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  background: #0A0A0F;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Switzer', sans-serif;
+  color: #E7E9EE;
+  overflow-x: clip;
+}
+
+::selection {
+  background: #7C5CFC;
+  color: #0A0A0F;
+}
+
+.font-display {
+  font-family: 'Clash Display', sans-serif;
+}
+
+.font-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Hero display treatment retains the original vertical gradient. */
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* gradient text used for major headings */
+.grad-text {
+  background: linear-gradient(135deg, #F4F1FF 0%, #C9BEFF 35%, #7C5CFC 70%, #22D3C7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* thin scanline texture used behind sections as ambient signature */
+.scanlines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(231, 233, 238, 0.035) 0px,
+    rgba(231, 233, 238, 0.035) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+.animate-drift {
+  animation: drift 6s ease-in-out infinite;
+}
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.animate-blink-dot {
+  animation: blink-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+@keyframes marquee-right {
+  from { transform: translateX(-33.333%); }
+  to { transform: translateX(0); }
+}
+.animate-marquee-left {
+  animation: marquee-left 38s linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-drift, .animate-blink-dot, .animate-marquee-left, .animate-marquee-right {
+    animation: none !important;
+  }
+}
+
+/* focus visibility for accessibility */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #22D3C7;
+  outline-offset: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #23232E;
+  border-radius: 8px;
+}
