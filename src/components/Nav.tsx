@@ -25,7 +25,7 @@ export default function Nav() {
         className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-5 sm:px-8 md:px-12 py-5 md:py-6"
       >
         <a href="#top" className="font-display text-lg tracking-tight text-mist">
-          {profile.name}
+          {profile.name}.
         </a>
 
         <div className="hidden md:flex items-center gap-8 font-mono text-xs tracking-[0.2em] uppercase text-muted">
