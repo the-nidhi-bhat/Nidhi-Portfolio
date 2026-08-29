@@ -3,3 +3,6 @@ dist
 *.tsbuildinfo
 .DS_Store
 *.local
+.env
+.env.*
+!.env.example
