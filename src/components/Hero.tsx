@@ -55,15 +55,6 @@ export default function Hero() {
           {profile.tagline}
         </motion.p>
 
-        <motion.a
-          href="#contact"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.6 }}
-          className="pointer-events-auto inline-flex items-center justify-center rounded-full px-7 py-3 sm:px-9 sm:py-3.5 text-xs sm:text-sm font-medium uppercase tracking-widest text-ink bg-gradient-to-r from-signal-cyan to-signal-violet hover:opacity-90 transition-opacity whitespace-nowrap"
-        >
-          Contact Me
-        </motion.a>
       </div>
     </section>
   )
