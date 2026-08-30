@@ -4,7 +4,7 @@ import avatarImg from '../assets/avatar.png'
 export default function Avatar() {
   return (
     <div
-      className="absolute left-1/2 top-[31%] z-10 -translate-x-1/2 pointer-events-none sm:top-[29%] md:top-[27%]"
+      className="absolute left-1/2 top-[26%] z-30 -translate-x-1/2 pointer-events-none sm:top-[24%] md:top-[22%]"
     >
       {/* ambient halo behind the cutout — soft light only, no shape, no box */}
       <div className="absolute inset-0 -z-10 flex items-center justify-center">
