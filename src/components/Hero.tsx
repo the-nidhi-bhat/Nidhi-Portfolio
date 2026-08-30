@@ -24,7 +24,7 @@ export default function Hero() {
             initial={{ x: '-8%', y: '100%' }}
             animate={{ x: 0, y: 0 }}
             transition={{ delay: 0.2, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display hero-heading w-full whitespace-nowrap font-bold leading-[0.95] tracking-tight text-[12.6vw] sm:text-[10.8vw] md:text-[15.5vw] lg:text-[17vw]"
+            className="font-display hero-heading w-full whitespace-nowrap text-center font-bold leading-[0.95] tracking-tight text-[12.6vw] sm:text-[10.8vw] md:text-[15.5vw] lg:text-[17vw]"
           >
             HI, I&apos;M NIDHI
           </motion.h1>
