@@ -4,7 +4,7 @@ import avatarImg from '../assets/avatar.png'
 export default function Avatar() {
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 z-10 top-[58%] -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 pointer-events-none"
+      className="absolute left-1/2 top-[31%] z-10 -translate-x-1/2 pointer-events-none sm:top-[29%] md:top-[27%]"
     >
       {/* ambient halo behind the cutout — soft light only, no shape, no box */}
       <div className="absolute inset-0 -z-10 flex items-center justify-center">
@@ -16,7 +16,7 @@ export default function Avatar() {
           src={avatarImg}
           alt="Nidhi"
           draggable={false}
-          className="select-none w-[240px] sm:w-[320px] md:w-[420px] lg:w-[480px] h-auto object-contain"
+          className="select-none h-auto w-[78vw] max-w-[400px] object-contain sm:w-[57vw] sm:max-w-[500px] md:w-[50vw] md:max-w-[560px] lg:w-[42vw]"
         />
       </Magnet>
     </div>

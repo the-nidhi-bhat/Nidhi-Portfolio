@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative h-screen flex flex-col overflow-hidden px-5 sm:px-8 md:px-12 pt-24 sm:pt-28 pb-7 sm:pb-8 md:pb-10"
+      className="relative min-h-dvh flex flex-col overflow-hidden px-5 sm:px-8 md:px-12 pt-24 sm:pt-28 pb-7 sm:pb-8 md:pb-10"
     >
       <motion.p
         initial={{ opacity: 0, y: 12 }}
@@ -17,26 +17,16 @@ export default function Hero() {
         {profile.role}
       </motion.p>
 
-      {/* Massive full-width heading, slides in from the left while rising into place */}
-      <div className="mt-4 sm:mt-2 md:-mt-1">
+      {/* Keep the introduction as one wide line, with the portrait immediately below it. */}
+      <div className="relative z-20 mt-4 sm:mt-2 md:-mt-1">
         <div className="overflow-hidden">
           <motion.h1
             initial={{ x: '-8%', y: '100%' }}
             animate={{ x: 0, y: 0 }}
             transition={{ delay: 0.2, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display hero-heading font-bold leading-[0.95] tracking-tight whitespace-nowrap w-full text-[15vw] sm:text-[13vw] md:text-[11vw] lg:text-[9.5vw]"
+            className="font-display hero-heading w-full whitespace-nowrap font-bold leading-[0.95] tracking-tight text-[12.6vw] sm:text-[10.8vw] md:text-[9vw] lg:text-[8.5vw]"
           >
-            HI, I&apos;M
-          </motion.h1>
-        </div>
-        <div className="overflow-hidden">
-          <motion.h1
-            initial={{ x: '-8%', y: '100%' }}
-            animate={{ x: 0, y: 0 }}
-            transition={{ delay: 0.38, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display hero-heading font-bold leading-[0.95] tracking-tight whitespace-nowrap w-full text-[15vw] sm:text-[13vw] md:text-[11vw] lg:text-[9.5vw]"
-          >
-            NIDHI
+            HI, I&apos;M NIDHI
           </motion.h1>
         </div>
       </div>
