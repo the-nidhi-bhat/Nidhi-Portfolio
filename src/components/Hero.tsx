@@ -26,7 +26,7 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
             className="font-display hero-heading font-bold leading-[0.95] tracking-tight whitespace-nowrap w-full text-[15vw] sm:text-[13vw] md:text-[11vw] lg:text-[9.5vw]"
           >
-            Hi, I&apos;m
+            HI, I&apos;M
           </motion.h1>
         </div>
         <div className="overflow-hidden">
@@ -36,7 +36,7 @@ export default function Hero() {
             transition={{ delay: 0.38, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
             className="font-display hero-heading font-bold leading-[0.95] tracking-tight whitespace-nowrap w-full text-[15vw] sm:text-[13vw] md:text-[11vw] lg:text-[9.5vw]"
           >
-            Nidhi.
+            NIDHI
           </motion.h1>
         </div>
       </div>
@@ -55,6 +55,15 @@ export default function Hero() {
           {profile.tagline}
         </motion.p>
 
+        <motion.a
+          href="#contact"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.65, duration: 0.6 }}
+          className="pointer-events-auto inline-flex min-h-11 items-center rounded-full border border-signal-violet bg-signal-violet/20 px-5 sm:px-7 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-mist shadow-[0_0_28px_rgba(124,92,252,0.35)] transition-colors hover:bg-signal-violet hover:text-white"
+        >
+          Contact me
+        </motion.a>
       </div>
     </section>
   )
