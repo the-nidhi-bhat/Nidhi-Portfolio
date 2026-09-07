@@ -38,12 +38,8 @@ export default function Nav() {
         transition={{ duration: 0.6 }}
         className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-5 sm:px-8 md:px-12 py-5 md:py-6"
       >
-        <a href="#top" aria-label={`${profile.name} home`} className="flex items-center">
-          <img
-            src="/ChatGPT%20Image%20Sep%208,%202026,%2003_46_57%20AM.png"
-            alt="Nidhi logo"
-            className="h-10 w-10 rounded-full object-cover"
-          />
+        <a href="#top" className="font-display text-lg tracking-tight text-mist">
+          {profile.name}.
         </a>
 
         <div className="hidden md:flex items-center gap-6 font-mono text-xs tracking-[0.2em] uppercase text-muted">
