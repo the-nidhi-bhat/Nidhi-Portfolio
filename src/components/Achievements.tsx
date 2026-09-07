@@ -4,7 +4,7 @@ import { Trophy } from 'lucide-react'
 
 export default function Achievements() {
   return (
-    <section className="relative px-5 sm:px-8 md:px-12 py-24 sm:py-28 border-t border-hairline">
+    <section id="achievements" className="relative px-5 sm:px-8 md:px-12 py-24 sm:py-28 border-t border-hairline">
       <div className="max-w-5xl mx-auto">
         <FadeIn>
           <p className="font-mono text-xs tracking-[0.3em] uppercase text-signal-cyan mb-10">Hackathons &amp; recognition</p>

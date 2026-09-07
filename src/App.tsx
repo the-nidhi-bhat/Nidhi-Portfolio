@@ -4,6 +4,8 @@ import Marquee from './components/Marquee'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Education from './components/Education'
+import Certifications from './components/Certifications'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 
@@ -16,6 +18,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Education />
+      <Certifications />
       <Achievements />
       <Contact />
     </div>

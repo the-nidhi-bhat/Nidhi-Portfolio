@@ -25,6 +25,17 @@ export default function About() {
             />
           ))}
         </div>
+
+        <FadeIn delay={0.1}>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-hairline rounded-2xl overflow-hidden mt-14">
+            {about.highlights.map((highlight) => (
+              <div key={highlight.label} className="bg-ink p-5 sm:p-6">
+                <p className="font-display text-3xl sm:text-4xl text-mist">{highlight.value}</p>
+                <p className="font-mono text-[10px] uppercase tracking-widest text-muted mt-2">{highlight.label}</p>
+              </div>
+            ))}
+          </div>
+        </FadeIn>
       </div>
     </section>
   )

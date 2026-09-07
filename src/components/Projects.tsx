@@ -71,9 +71,9 @@ function ProjectCard({ project, index, total }: { project: Project; index: numbe
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`${project.name} on GitHub`}
-                  className="w-10 h-10 flex items-center justify-center rounded-full border border-hairline hover:border-signal-cyan/50 hover:text-signal-cyan transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full border border-hairline px-4 py-2 text-xs font-mono uppercase tracking-widest hover:border-signal-cyan/50 hover:text-signal-cyan transition-colors"
                 >
-                  <Github size={16} />
+                  <Github size={14} /> GitHub
                 </a>
               )}
               {project.live && (
@@ -125,14 +125,14 @@ export default function Projects() {
                 href={p.github}
                 target="_blank"
                 rel="noreferrer"
+                aria-label={`${p.name} on GitHub`}
                 className="group block h-full rounded-2xl border border-hairline p-6 hover:border-signal-cyan/40 transition-colors"
               >
                 <div className="flex items-center justify-between mb-3">
                   <h4 className="font-display text-lg text-mist">{p.name}</h4>
-                  <ArrowUpRight
-                    size={16}
-                    className="text-muted group-hover:text-signal-cyan group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-                  />
+                  <span className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-muted group-hover:text-signal-cyan">
+                    GitHub <ArrowUpRight size={14} />
+                  </span>
                 </div>
                 <p className="text-muted text-sm leading-relaxed mb-4">{p.description}</p>
                 <div className="flex flex-wrap gap-2">

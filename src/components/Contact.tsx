@@ -31,7 +31,7 @@ export default function Contact() {
             </a>
             <a
               href="/Nidhi_Resume.pdf"
-              download
+              download="Nidhi_Resume.pdf"
               className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-sm font-medium border border-hairline text-mist hover:bg-white/5 transition-colors"
             >
               <FileDown size={16} /> Resume
