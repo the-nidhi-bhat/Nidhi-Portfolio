@@ -1,3 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1280">
-  <image href="/ChatGPT%20Image%20Sep%208,%202026,%2003_46_57%20AM.png" width="1280" height="1280" preserveAspectRatio="xMidYMid slice"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Nidhi portfolio logo</title>
+  <defs>
+    <linearGradient id="n-gradient" x1="12" y1="52" x2="52" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFC"/>
+      <stop offset="1" stop-color="#22D3C7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0A0A0F"/>
+  <path d="M17 48V16l30 32V16" fill="none" stroke="url(#n-gradient)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
