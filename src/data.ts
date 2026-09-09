@@ -26,22 +26,22 @@ export const skillGroups = [
   {
     label: 'Languages',
     tag: 'LANG',
-    items: ['Python', 'C', 'C++', 'JavaScript', 'TypeScript', 'HTML', 'CSS'],
+    items: ['Python', 'C', 'C++', 'HTML', 'CSS'],
   },
   {
-    label: 'AI & Data',
-    tag: 'AI+DATA',
-    items: ['Generative AI', 'Prompt Engineering', 'Machine Learning', 'NLP', 'Data Analysis', 'NetworkX / Graph Analysis'],
-  },
-  {
-    label: 'Development',
-    tag: 'STACK',
-    items: ['React', 'Next.js', 'FastAPI', 'PostgreSQL / PostGIS', 'Supabase', 'Tailwind CSS'],
+    label: 'Platforms',
+    tag: 'PLATFORM',
+    items: ['Vercel', 'Lovable', 'Supabase', 'Firebase', 'Google Cloud', 'AWS'],
   },
   {
     label: 'Tools',
     tag: 'TOOLS',
-    items: ['Git', 'GitHub', 'VS Code', 'Figma', 'Power BI'],
+    items: ['SQL', 'Git', 'GitHub', 'Figma', 'VS Code'],
+  },
+  {
+    label: 'Exploring',
+    tag: 'LEARNING',
+    items: ['JavaScript', 'React', 'TypeScript', 'AI / ML', 'Cloud development'],
   },
 ]
 
