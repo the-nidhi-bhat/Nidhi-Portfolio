@@ -1,4 +1,4 @@
-# Nidhi — AI/ML & Full-Stack Builder
+# Nidhi - Portfolio
 
 Personal developer portfolio for Nidhi, a Computer Science & Business Systems student focused on AI, data, software development, and modern web applications. The site presents selected projects, technical skills, hackathon work, achievements, certifications, and contact links in a dark editorial interface.
 
