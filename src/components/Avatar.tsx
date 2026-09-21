@@ -1,5 +1,5 @@
 import Magnet from './Magnet'
-import avatarImg from '../assets/avatar.png'
+import avatarImg from '../assets/avatar.webp'
 
 export default function Avatar() {
   return (

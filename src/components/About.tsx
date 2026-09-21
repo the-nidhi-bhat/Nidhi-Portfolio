@@ -36,6 +36,17 @@ export default function About() {
             ))}
           </div>
         </FadeIn>
+
+        <FadeIn delay={0.15}>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-muted mt-12 mb-4">Currently learning</p>
+          <ul className="flex flex-wrap gap-3">
+            {about.currentlyLearning.map((item) => (
+              <li key={item} className="font-mono text-xs text-mist border border-hairline rounded-full px-4 py-2">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </FadeIn>
       </div>
     </section>
   )
