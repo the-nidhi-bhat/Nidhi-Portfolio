@@ -12,6 +12,7 @@ function Row({ direction }: { direction: 'left' | 'right' }) {
         {tripled.map((item, i) => (
           <div
             key={i}
+            aria-hidden={i >= marqueeItems.length}
             className="flex-shrink-0 w-[220px] sm:w-[260px] rounded-2xl border border-hairline bg-panel px-5 py-4"
           >
             <p className="font-display text-sm sm:text-base text-mist">{item.label}</p>

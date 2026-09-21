@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FileDown } from 'lucide-react'
 import { profile } from '../data'
@@ -13,6 +13,9 @@ const links = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+  const triggerRef = useRef<HTMLButtonElement>(null)
+  const wasOpen = useRef(false)
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
@@ -22,13 +25,38 @@ export default function Nav() {
   }, [open])
 
   useEffect(() => {
+    if (open) {
+      wasOpen.current = true
+      menuRef.current?.focus()
+    } else if (wasOpen.current) {
+      wasOpen.current = false
+      triggerRef.current?.focus()
+    }
+  }, [open])
+
+  useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpen(false)
+      if (event.key === 'Escape') {
+        setOpen(false)
+        return
+      }
+      if (!open || event.key !== 'Tab') return
+      const focusables = menuRef.current?.querySelectorAll<HTMLElement>('a[tabindex="0"]') ?? []
+      if (focusables.length === 0) return
+      const first = focusables[0]
+      const last = focusables[focusables.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
     }
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [])
+  }, [open])
 
   return (
     <>
@@ -64,6 +92,7 @@ export default function Nav() {
         </a>
 
         <button
+          ref={triggerRef}
           aria-label="Toggle menu"
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -82,8 +111,13 @@ export default function Nav() {
 
       <div
         id="mobile-menu"
+        ref={menuRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu"
         aria-hidden={!open}
-        className={`md:hidden fixed inset-0 z-30 bg-ink/95 backdrop-blur-md flex flex-col justify-center items-start px-8 gap-8 transition-opacity duration-300 ${
+        tabIndex={-1}
+        className={`md:hidden fixed inset-0 z-30 bg-ink/95 backdrop-blur-md flex flex-col justify-center items-start px-8 gap-8 transition-opacity duration-300 outline-none ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
