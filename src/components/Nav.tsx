@@ -117,7 +117,7 @@ export default function Nav() {
         aria-label="Menu"
         aria-hidden={!open}
         tabIndex={-1}
-        className={`md:hidden fixed inset-0 z-30 bg-ink/95 backdrop-blur-md flex flex-col justify-center items-start px-8 gap-8 transition-opacity duration-300 outline-none ${
+        className={`md:hidden fixed inset-0 z-[35] bg-ink/95 backdrop-blur-md flex flex-col justify-center items-start px-8 gap-8 transition-opacity duration-300 outline-none ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
