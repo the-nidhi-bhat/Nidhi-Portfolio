@@ -1,49 +1,62 @@
 export const profile = {
-  name: 'Nidhi',
-  role: 'Computer Science & Business Systems · AI & Data Science · Software',
-  tagline: 'I build practical AI-powered and software applications that solve real-world problems.',
+  name: 'Nidhi Bhat',
+  role: 'Computer Science & Business Systems Student | Frontend Developer | AI & Web Development',
+  tagline: 'I build practical web applications with strong frontend experiences and useful AI integrations — turning real-world problems into working products.',
   location: 'Belagavi, Karnataka',
   email: 'the.nidhi.bhat@gmail.com',
   resume: '/Nidhi_Resume.pdf',
   github: 'https://github.com/the-nidhi-bhat',
   linkedin: 'https://linkedin.com/in/the-nidhi-bhat',
-  status: 'Open to AI/ML & full-stack internships',
+  portfolio: 'https://nidhi-portfolio-rosy.vercel.app',
+  status: 'Open to Frontend Development & AI/Web Development Internships',
 }
 
 export const about = {
   paragraphs: [
-    "I'm a Computer Science & Business Systems student at VTU, working toward AI & Data Science alongside software development. I learn by building — taking messy real-world problems and turning them into practical, working apps.",
-    "My work spans an AI crop-health platform with Kannada support (AgriN), an explainable audit-prioritization tool for SIH (MPLADS Sentinel), and wellness and weather products shipped under hackathon time constraints. I also practise DSA and problem-solving to build the fundamentals underneath the projects.",
+    "I'm a Computer Science & Business Systems student at VTU Belagavi and a frontend-focused developer who enjoys building practical web applications with AI.",
+    "I learn by building — from AI-powered crop health and explainable audit systems to developer tools, weather applications, and cloud-based products.",
+    "I've built and led projects through hackathons and technical competitions, including Smart India Hackathon, IBM Bob 2.0, and CloudBuild.",
+    "I'm also a Co-Organizer for GDGoC VTU Belagavi 2026–27, where I work on building and supporting a student developer community.",
   ],
   highlights: [
     { value: '8.95', label: 'Semester 1 SGPA' },
     { value: '8.42', label: 'Semester 2 SGPA' },
-    { value: '6', label: 'Projects' },
-    { value: '2029', label: 'Expected graduation' },
+    { value: '4', label: 'Featured Projects' },
+    { value: '2029', label: 'Expected Graduation' },
   ],
-  currentlyLearning: ['Java', 'DSA', 'Data Science', 'AI/ML'],
+  currentlyLearning: ['React', 'Next.js', 'TypeScript', 'AI Integration', 'DSA'],
 }
 
 export const skillGroups = [
   {
-    label: 'Languages',
-    tag: 'LANG',
-    items: ['Python', 'C', 'C++', 'HTML', 'CSS', 'JavaScript', 'TypeScript'],
+    label: 'Frontend',
+    tag: 'FRONTEND',
+    items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
   },
   {
-    label: 'Platforms',
-    tag: 'PLATFORM',
-    items: ['Vercel', 'Supabase', 'Firebase', 'Google Cloud', 'AWS'],
+    label: 'Programming',
+    tag: 'PROGRAMMING',
+    items: ['Python', 'C', 'Java'],
+  },
+  {
+    label: 'AI / GenAI',
+    tag: 'AI',
+    items: ['Generative AI', 'Prompt Engineering', 'Gemini', 'OpenAI API', 'AI Application Integration'],
+  },
+  {
+    label: 'Data / Visualization',
+    tag: 'DATA',
+    items: ['Chart.js', 'Data Visualization'],
   },
   {
     label: 'Tools',
     tag: 'TOOLS',
-    items: ['SQL', 'Git', 'GitHub', 'Figma', 'VS Code'],
+    items: ['Git', 'GitHub', 'VS Code'],
   },
   {
-    label: 'Exploring',
-    tag: 'LEARNING',
-    items: ['React', 'Next.js', 'FastAPI', 'AI / ML', 'Data Science', 'DSA'],
+    label: 'Cloud / Backend Exposure',
+    tag: 'CLOUD',
+    items: ['Firebase', 'Supabase', 'AWS', 'Amazon Bedrock', 'FastAPI', 'PostgreSQL'],
   },
 ]
 
@@ -53,87 +66,107 @@ export type Project = {
   category: string
   status: string
   description: string
+  problem: string
+  role: string
   tech: string[]
+  achievement: string
   github?: string
   live?: string
-  readouts: { label: string; value: string }[]
 }
 
 export const projects: Project[] = [
   {
     index: '01',
-    name: 'AgriN',
-    category: 'Featured · AI / Agriculture / Bilingual',
-    status: 'IN PROGRESS',
+    name: 'INVOX',
+    category: 'AI-Assisted GST Invoicing',
+    status: 'SHIPPED',
     description:
-      'AI-assisted crop health platform that analyzes photos of affected leaves and delivers plain-language disease guidance — in English and Kannada. Built on Supabase with row-level security, private image storage, and server-side Gemini analysis.',
-    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Gemini API'],
-    github: 'https://github.com/the-nidhi-bhat/agrin-crop-advisor',
-    readouts: [
-      { label: 'FOCUS', value: 'Crop health · AI vision' },
-      { label: 'LANGUAGE', value: 'English + Kannada' },
-      { label: 'BACKEND', value: 'Supabase Edge Functions' },
-    ],
+      'An AI-assisted invoicing application designed for Indian small businesses. It converts WhatsApp-style Hinglish/English orders into structured invoice data, lets the user review the extraction, applies deterministic GST validation, and generates an invoice/payment workflow.',
+    problem:
+      'Small businesses struggle with manual GST invoicing — orders come via WhatsApp in informal language, and creating compliant invoices is time-consuming and error-prone.',
+    role: 'Solo Builder',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Python', 'AWS Lambda', 'API Gateway', 'Amazon Bedrock', 'AWS Amplify'],
+    achievement: '🥈 2nd Place — CloudBuild AI Virtual Build-a-Thon 2026',
+    github: 'https://github.com/the-nidhi-bhat/Invox',
+    live: 'https://invox.antideploy.app/',
   },
   {
     index: '02',
-    name: 'MPLADS Sentinel',
-    category: 'Featured · AI / Data Analysis / Explainable Risk Analysis',
-    status: 'IN PROGRESS',
+    name: 'Legacy Code Whisperer',
+    category: 'AI Developer Tool',
+    status: 'SHIPPED',
     description:
-      'AI-powered audit-prioritization platform for MPLADS funds, built for Smart India Hackathon 2026. Analyzes project data for cost, timeline, spatial, agency, and progress-expenditure anomalies, and explains why a project may deserve human investigation.',
-    tech: ['Python', 'FastAPI', 'scikit-learn', 'pandas', 'PostgreSQL', 'SQLAlchemy', 'Next.js', 'TypeScript'],
-    github: 'https://github.com/the-nidhi-bhat/mplads-sentinel',
-    readouts: [
-      { label: 'BUILT FOR', value: 'SIH 2026' },
-      { label: 'ROLE', value: 'Team Lead' },
-      { label: 'TEAM', value: '6 people' },
-    ],
+      'An AI-assisted developer tool designed to help understand and modernize legacy code by providing explanations, analysis, and modernization-oriented assistance.',
+    problem:
+      'Developers spend significant time understanding legacy codebases with poor documentation. This tool uses AI to explain, analyze, and assist with modernization.',
+    role: 'Team Lead / Builder',
+    tech: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'AI/LLM Integration'],
+    achievement: 'IBM Bob 2.0 — Team Lead / Builder',
+    github: 'https://github.com/the-nidhi-bhat/Codexmatrix-IBM-Bob-Hackathon',
+    live: 'https://legacy-code-whisperer-mu.vercel.app/',
   },
   {
     index: '03',
-    name: 'Sky Predict',
-    category: 'Featured · NASA Space Apps 2025',
-    status: 'SHIPPED',
+    name: 'AgriN',
+    category: 'AI Crop Health Companion',
+    status: 'IN DEVELOPMENT',
     description:
-      'A weather intelligence web app built for NASA Space Apps Challenge 2025 — real-time data, 7-day forecasts, 6-month climate trends, interactive charts, and a JARVIS-style AI weather chatbot, built under hackathon time constraints.',
-    tech: ['JavaScript', 'Open-Meteo API', 'Chart.js', 'AI chatbot'],
-    github: 'https://github.com/the-nidhi-bhat/SKY-PREDICT-JARVIS',
-    live: 'https://the-nidhi-bhat.github.io/SKY-PREDICT-JARVIS/',
-    readouts: [
-      { label: 'EVENT', value: 'NASA Space Apps' },
-      { label: 'MODE', value: 'Team hackathon' },
-    ],
+      'An AI-assisted crop health platform where users can provide an image of an affected crop leaf and receive AI-powered disease identification and practical crop guidance. Current supported crops include Tomato, Chili, and Paddy with bilingual support including Kannada.',
+    problem:
+      'Farmers lack accessible, immediate crop disease diagnosis. AgriN provides AI vision-based disease identification with practical guidance in local languages.',
+    role: 'Solo Builder',
+    tech: ['TypeScript', 'React', 'Next.js', 'Gemini', 'Firebase', 'AI Vision'],
+    achievement: 'Active Project — AI Vision + Bilingual Support',
+    github: 'https://github.com/the-nidhi-bhat/agrin-crop-advisor',
+    live: 'https://agrin-crop-advisor.vercel.app/',
   },
   {
     index: '04',
-    name: 'Mindful Haven',
-    category: 'Featured · Wellness',
-    status: 'SHIPPED',
+    name: 'MPLADS Sentinel',
+    category: 'Explainable Audit Platform',
+    status: 'IN DEVELOPMENT',
     description:
-      'A student-focused mental wellness web app — mood tracking, journaling, guided breathing, meditation, and crisis-support resources in a calming, mobile-friendly interface.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
-    github: 'https://github.com/the-nidhi-bhat/Mind-Haven',
-    live: 'https://the-nidhi-bhat.github.io/Mind-Haven/',
-    readouts: [
-      { label: 'FOCUS', value: 'Student wellbeing' },
-      { label: 'STACK', value: 'Firebase' },
-    ],
+      'An explainable audit-prioritization platform designed around MPLADS data. It analyzes signals such as cost, timeline, expenditure/progress, agency and spatial patterns to help prioritize projects that may require closer audit attention.',
+    problem:
+      'Audit agencies need to prioritize which MPLADS projects warrant investigation. This platform uses ML to detect anomalies and explain why specific projects need human review.',
+    role: 'Team Lead — Phantom Syndicate',
+    tech: ['Python', 'FastAPI', 'pandas', 'scikit-learn', 'PostgreSQL', 'SQLAlchemy', 'Next.js', 'TypeScript'],
+    achievement: 'Smart India Hackathon 2026 — Internal Round Cleared',
+    github: 'https://github.com/the-nidhi-bhat/mplads-sentinel',
   },
 ]
 
 export const moreProjects = [
   {
+    name: 'Sky Predict',
+    description: 'A weather intelligence web application with real-time weather data, forecasts, climate trends, interactive visualizations and an AI-style weather assistant.',
+    tech: ['JavaScript', 'Open-Meteo', 'Chart.js'],
+    github: 'https://github.com/the-nidhi-bhat/SKY-PREDICT-JARVIS',
+    live: 'https://the-nidhi-bhat.github.io/SKY-PREDICT-JARVIS/',
+  },
+  {
+    name: 'Mindful Haven',
+    description: 'A student-focused wellness web application with features such as mood tracking, journaling, guided breathing, meditation and support resources.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+    github: 'https://github.com/the-nidhi-bhat/Mind-Haven',
+  },
+  {
+    name: 'Cryptography RSA',
+    description: 'An RSA cryptography implementation exploring key generation, encryption and decryption. Secured 3rd place at National Mathematics Day.',
+    tech: ['JavaScript', 'Cryptography', 'RSA'],
+    github: 'https://github.com/the-nidhi-bhat/cryptography-rsa',
+  },
+  {
+    name: 'Liminal',
+    description: 'A design-focused experimental project exploring UI/UX patterns and interactions.',
+    tech: ['TypeScript', 'React', 'Tailwind CSS'],
+    github: 'https://github.com/the-nidhi-bhat/liminal',
+  },
+  {
     name: 'CodexMatrix Redesign',
     description: 'Frontend redesign improving interface structure, visual systems, responsiveness, and UX.',
     tech: ['TypeScript', 'Frontend', 'UI/UX'],
     github: 'https://github.com/the-nidhi-bhat/codexmatrix-redesign-abtalks',
-  },
-  {
-    name: 'Cryptography RSA',
-    description: 'A JavaScript implementation of RSA key generation, encryption, and decryption, built for Mathematics Day — secured 3rd place.',
-    tech: ['JavaScript', 'Cryptography', 'RSA'],
-    github: 'https://github.com/the-nidhi-bhat/cryptography-rsa',
   },
 ]
 
@@ -151,33 +184,43 @@ export const education = [
 ]
 
 export const certifications = [
-  { issuer: 'Anthropic', name: 'AI Fluency: Framework & Foundations' },
-  { issuer: 'Adobe', name: 'University Hackathon 2026 — Participant' },
   { issuer: 'upGrad', name: 'Generative AI Foundations' },
-  { issuer: 'AWS', name: 'Fundamentals of ML & AI' },
-  { issuer: 'Google Cloud', name: 'Skill Badges' },
-  { issuer: 'NASA', name: 'Space Apps Challenge 2025 — Participant' },
-  { issuer: 'HackerRank', name: 'Python — Skill Badges' },
-  { issuer: 'HP LIFE', name: 'Cybersecurity Awareness' },
+  { issuer: 'AWS', name: 'ML & AI Fundamentals' },
+  { issuer: 'HP LIFE', name: 'AI' },
+  { issuer: 'HP LIFE', name: 'Data Science' },
+  { issuer: 'HP LIFE', name: 'Cybersecurity' },
+  { issuer: 'HP LIFE', name: 'Critical Thinking' },
+  { issuer: 'Google Cloud', name: 'Gemini Badge / Arcade' },
+  { issuer: 'HackerRank', name: 'Python Basic' },
+  { issuer: 'Qualcomm', name: 'AI Upskilling' },
 ]
 
 export const achievements = [
-  { title: 'Smart India Hackathon 2026 — MPLADS Sentinel', detail: 'Team lead & primary presenter · advanced to the 4th internal round' },
-  { title: 'NASA Space Apps Challenge 2025 — Sky Predict', detail: 'Participant, built a weather intelligence app' },
-  { title: 'Mathematics Day — Cryptography RSA', detail: '3rd Place' },
-  { title: 'Hack With India — Vibe Hacks 2.0', detail: 'Top 1000 of 3000 teams' },
-  { title: 'Quantum Summit', detail: '2nd Place, Presentation' },
-  { title: 'Google DevFest Belgaum 2025', detail: 'Participant' },
-  { title: 'Build with AI — Google Developer Groups', detail: 'Participant' },
-  { title: 'ViCODATHON — AB Talks', detail: 'Participant' },
+  { title: 'CloudBuild AI Virtual Build-a-Thon 2026', detail: '🥈 2nd Place — INVOX · Solo Builder' },
+  { title: 'Quantum Summit', detail: '🥈 2nd Place — Presentation' },
+  { title: 'National Mathematics Day', detail: '🥉 3rd Place — RSA Cryptography' },
+  { title: 'Smart India Hackathon 2026', detail: '🇮🇳 Internal Round Cleared — Team Lead · Phantom Syndicate · MPLADS Sentinel' },
+  { title: 'Vibe Hacks 2.0', detail: '🏅 Top 1,000 / 3,000 Teams' },
+  { title: 'IBM Bob 2.0', detail: '🤖 Team Lead / Builder — Legacy Code Whisperer' },
+]
+
+export const leadership = [
+  {
+    organization: 'Google Developer Groups on Campus (GDGoC)',
+    chapter: 'VTU Belagavi',
+    role: 'Co-Organizer',
+    period: '2026–27',
+    description: 'Working with the chapter team to support student developers, organize technical initiatives, and help build a stronger developer community on campus.',
+  },
 ]
 
 export const marqueeItems = [
-  { label: 'AgriN', meta: 'AI crop health · Kannada + English' },
-  { label: 'MPLADS Sentinel', meta: 'Anomaly detection · SIH 2026' },
-  { label: 'Mindful Haven', meta: 'Wellness platform · Firebase' },
-  { label: 'Sky Predict', meta: 'NASA Space Apps 2025' },
-  { label: 'CodexMatrix Redesign', meta: 'UI/UX rebuild' },
-  { label: 'Cryptography RSA', meta: '3rd place · Mathematics Day' },
-  { label: 'Top 1000 / 3000 teams', meta: 'Vibe Hacks 2.0' },
+  { label: 'INVOX', meta: '🥈 CloudBuild 2026 · AI Invoicing' },
+  { label: 'Legacy Code Whisperer', meta: 'IBM Bob 2.0 · AI Dev Tool' },
+  { label: 'AgriN', meta: 'AI Crop Health · Kannada Support' },
+  { label: 'MPLADS Sentinel', meta: 'SIH 2026 · Explainable Audit' },
+  { label: 'Sky Predict', meta: 'Weather Intelligence · Chart.js' },
+  { label: 'Mindful Haven', meta: 'Student Wellness · Firebase' },
+  { label: 'Cryptography RSA', meta: '🥉 National Mathematics Day' },
+  { label: 'GDGoC VTU', meta: 'Co-Organizer 2026–27' },
 ]
