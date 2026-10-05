@@ -14,7 +14,7 @@ export default function Skills() {
           </h2>
         </FadeIn>
 
-        <div className="grid sm:grid-cols-2 gap-px bg-hairline rounded-2xl overflow-hidden">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-hairline rounded-2xl overflow-hidden">
           {skillGroups.map((group, i) => (
             <FadeIn key={group.label} delay={i * 0.08} className="bg-ink p-8 sm:p-10">
               <div className="flex items-center justify-between mb-6">
