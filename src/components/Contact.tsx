@@ -16,7 +16,7 @@ export default function Contact() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <p className="text-muted text-base sm:text-lg max-w-xl mx-auto mb-12">
-            {profile.status}. If you&apos;re working on something in AI/ML or full-stack and want another
+            {profile.status}. If you&apos;re working on something in frontend or AI/web development and want another
             builder in the room, say hi.
           </p>
         </FadeIn>
@@ -30,7 +30,7 @@ export default function Contact() {
               <Mail size={16} /> Email me
             </a>
             <a
-              href="/Nidhi_Resume.pdf"
+              href={profile.resume}
               download="Nidhi_Resume.pdf"
               className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-sm font-medium border border-hairline text-mist hover:bg-white/5 transition-colors"
             >
@@ -55,7 +55,7 @@ export default function Contact() {
       </div>
 
       <p className="text-center font-mono text-[10px] tracking-[0.2em] uppercase text-muted/60 mt-24">
-        Designed &amp; built by {profile.name} &middot; {new Date().getFullYear()}
+        Built by {profile.name} &middot; Computer Science & Business Systems Student &middot; Frontend Developer &middot; AI & Web Development &middot; {new Date().getFullYear()}
       </p>
     </section>
   )
