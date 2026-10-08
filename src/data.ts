@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'Nidhi Bhat',
+  name: 'Nidhi',
   role: 'Computer Science & Business Systems Student | Frontend Developer | AI & Web Development',
   tagline: 'I build practical web applications with strong frontend experiences and useful AI integrations — turning real-world problems into working products.',
   location: 'Belagavi, Karnataka',

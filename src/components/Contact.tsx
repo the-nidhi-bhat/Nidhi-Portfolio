@@ -55,7 +55,7 @@ export default function Contact() {
       </div>
 
       <p className="text-center font-mono text-[10px] tracking-[0.2em] uppercase text-muted/60 mt-24">
-        Built by {profile.name} &middot; Computer Science & Business Systems Student &middot; Frontend Developer &middot; AI & Web Development &middot; {new Date().getFullYear()}
+        Built by {profile.name} &middot; CSBS Student &middot; Frontend + AI &middot; {new Date().getFullYear()}
       </p>
     </section>
   )
