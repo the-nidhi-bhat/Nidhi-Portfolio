@@ -41,13 +41,13 @@ export default function Contact() {
 
         <FadeIn delay={0.2}>
           <div className="flex justify-center gap-6 text-muted">
-            <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:text-signal-cyan transition-colors">
+            <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="inline-flex p-2.5 -m-2.5 hover:text-signal-cyan transition-colors">
               <Github size={20} />
             </a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-signal-cyan transition-colors">
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="inline-flex p-2.5 -m-2.5 hover:text-signal-cyan transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href={`mailto:${profile.email}`} aria-label="Email" className="hover:text-signal-cyan transition-colors">
+            <a href={`mailto:${profile.email}`} aria-label="Email" className="inline-flex p-2.5 -m-2.5 hover:text-signal-cyan transition-colors">
               <Mail size={20} />
             </a>
           </div>

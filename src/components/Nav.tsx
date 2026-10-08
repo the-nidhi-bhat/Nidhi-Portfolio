@@ -67,7 +67,7 @@ export default function Nav() {
         transition={{ duration: 0.6 }}
         className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-5 sm:px-8 md:px-12 py-5 md:py-6"
       >
-        <a href="#top" className="font-display text-lg tracking-tight text-mist">
+        <a href="#top" className="font-display text-lg tracking-tight text-mist py-2 -my-2">
           {profile.name}.
         </a>
 
@@ -98,7 +98,7 @@ export default function Nav() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden flex flex-col gap-[5px] w-7"
+          className="lg:hidden flex flex-col gap-[5px] w-14 p-3.5 -m-3.5"
         >
           <span
             className={`h-[2px] bg-mist transition-transform duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`}

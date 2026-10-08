@@ -81,7 +81,7 @@ function ProjectCard({ project, index, total }: { project: Project; index: numbe
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`${project.name} on GitHub`}
-                  className="inline-flex items-center gap-2 rounded-full border border-hairline px-4 py-2 text-xs font-mono uppercase tracking-widest hover:border-signal-cyan/50 hover:text-signal-cyan transition-colors whitespace-nowrap"
+                  className="inline-flex items-center gap-2 rounded-full border border-hairline px-4 py-3 text-xs font-mono uppercase tracking-widest hover:border-signal-cyan/50 hover:text-signal-cyan transition-colors whitespace-nowrap"
                 >
                   <Github size={14} /> GitHub
                 </a>
@@ -91,7 +91,7 @@ function ProjectCard({ project, index, total }: { project: Project; index: numbe
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-full border border-signal-cyan/50 bg-signal-cyan/10 px-4 py-2 text-xs font-mono uppercase tracking-widest text-signal-cyan hover:bg-signal-cyan/20 transition-colors whitespace-nowrap"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-signal-cyan/50 bg-signal-cyan/10 px-4 py-3 text-xs font-mono uppercase tracking-widest text-signal-cyan hover:bg-signal-cyan/20 transition-colors whitespace-nowrap"
                 >
                   Live Demo <ArrowUpRight size={13} />
                 </a>
@@ -133,7 +133,7 @@ function OtherProjectCard({ project, index }: { project: typeof moreProjects[0];
             href={project.live}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-signal-cyan hover:text-signal-violet transition-colors"
+            className="inline-flex items-center gap-1.5 py-3 font-mono text-[10px] uppercase tracking-widest text-signal-cyan hover:text-signal-violet transition-colors"
           >
             Live Demo <ArrowUpRight size={12} />
           </a>
