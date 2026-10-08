@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Nidhi',
   role: 'CSBS Student | Frontend Developer | Building AI-Powered Experiences',
-  tagline: 'I build practical web experiences with frontend + AI.',
+  tagline: 'I turn ideas into practical web experiences with frontend, AI & backend.',
   location: 'Belagavi, Karnataka',
   email: 'the.nidhi.bhat@gmail.com',
   resume: '/Nidhi_Resume.pdf',
