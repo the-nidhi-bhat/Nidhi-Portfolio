@@ -33,12 +33,12 @@ export default function Hero() {
 
       <Avatar />
 
-      <div className="relative z-20 mt-auto flex flex-col sm:flex-row justify-between items-end gap-4 pointer-events-none pb-4 sm:pb-0">
+      <div className="relative z-20 mt-auto flex flex-col md:flex-row justify-between items-end gap-4 pointer-events-none pb-4 md:pb-0">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 0.6 }}
-          className="pointer-events-auto text-muted font-light uppercase tracking-wide leading-snug max-w-[170px] sm:max-w-[240px] md:max-w-[320px] sm:mb-4"
+          className="pointer-events-auto text-muted font-light uppercase tracking-wide leading-snug max-w-[170px] sm:max-w-[240px] md:max-w-[320px] md:mb-4"
           style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.05rem)' }}
         >
           {profile.tagline}
