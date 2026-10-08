@@ -204,13 +204,24 @@ export const achievements = [
   { title: 'IBM Bob 2.0', detail: '🤖 Team Lead / Builder — Legacy Code Whisperer' },
 ]
 
-export const leadership = [
+export type LeadershipItem = {
+  role: string
+  organization: string
+  meta?: string
+  description?: string
+}
+
+export const leadership: LeadershipItem[] = [
   {
-    organization: 'Google Developer Groups on Campus (GDGoC)',
-    chapter: 'VTU Belagavi',
-    role: 'Co-Organizer',
-    period: '2026–27',
-    description: 'Working with the chapter team to support student developers, organize technical initiatives, and help build a stronger developer community on campus.',
+    role: 'Co-Organizer · 2026–27',
+    organization: 'Google Developer Groups on Campus — VTU Belagavi',
+    description:
+      'Helping build a stronger student developer community through technical events, initiatives, and community programs.',
+  },
+  {
+    role: 'Volunteer · Firewall Team',
+    organization: 'SIH 2025 Grand Finale',
+    meta: 'Smart India Hackathon 2025',
   },
 ]
 
