@@ -6,9 +6,9 @@ import { profile } from '../data'
 const links = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Leadership', href: '#leadership' },
   { label: 'Projects', href: '#work' },
   { label: 'Achievements', href: '#achievements' },
-  { label: 'Leadership', href: '#leadership' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -71,7 +71,7 @@ export default function Nav() {
           {profile.name}.
         </a>
 
-        <div className="hidden md:flex items-center gap-6 font-mono text-xs tracking-[0.2em] uppercase text-muted">
+        <div className="hidden lg:flex items-center gap-6 font-mono text-xs tracking-[0.2em] uppercase text-muted">
           {links.map((l) => (
             <a key={l.label} href={l.href} className="hover:text-mist transition-colors duration-200">
               {l.label}
@@ -79,7 +79,7 @@ export default function Nav() {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-2 font-mono text-[11px] tracking-widest uppercase text-signal-cyan">
+        <div className="hidden xl:flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-signal-cyan">
           <span className="w-1.5 h-1.5 rounded-full bg-signal-cyan animate-blink-dot" />
           {profile.status}
         </div>
@@ -98,7 +98,7 @@ export default function Nav() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden flex flex-col gap-[5px] w-7"
+          className="lg:hidden flex flex-col gap-[5px] w-7"
         >
           <span
             className={`h-[2px] bg-mist transition-transform duration-300 ${open ? 'translate-y-[7px] rotate-45' : ''}`}
@@ -118,7 +118,7 @@ export default function Nav() {
         aria-label="Menu"
         aria-hidden={!open}
         tabIndex={-1}
-        className={`md:hidden fixed inset-0 z-[35] bg-ink/95 backdrop-blur-md flex flex-col justify-center items-start px-8 gap-8 transition-opacity duration-300 outline-none ${
+        className={`lg:hidden fixed inset-0 z-[35] bg-ink/95 backdrop-blur-md flex flex-col justify-center items-start px-8 gap-8 transition-opacity duration-300 outline-none ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >

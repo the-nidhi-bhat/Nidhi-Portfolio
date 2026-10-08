@@ -8,7 +8,7 @@ export const profile = {
   github: 'https://github.com/the-nidhi-bhat',
   linkedin: 'https://linkedin.com/in/the-nidhi-bhat',
   portfolio: 'https://nidhi-portfolio-rosy.vercel.app',
-  status: 'Open to Frontend Development & AI/Web Development Internships',
+  status: 'Open to Frontend & AI/Web Internships',
 }
 
 export const about = {
