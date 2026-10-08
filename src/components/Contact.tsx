@@ -7,7 +7,7 @@ export default function Contact() {
     <section id="contact" className="relative px-5 sm:px-8 md:px-12 py-28 sm:py-40">
       <div className="max-w-4xl mx-auto text-center">
         <FadeIn>
-          <p className="font-mono text-xs tracking-[0.3em] uppercase text-signal-cyan mb-6">04 &mdash; Contact</p>
+          <p className="font-mono text-xs tracking-[0.3em] uppercase text-signal-cyan mb-6">06 &mdash; Contact</p>
         </FadeIn>
         <FadeIn delay={0.05}>
           <h2 className="font-display grad-text font-bold leading-[0.95] tracking-tight text-[13vw] sm:text-7xl md:text-8xl mb-8">

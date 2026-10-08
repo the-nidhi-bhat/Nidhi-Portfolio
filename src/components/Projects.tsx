@@ -148,7 +148,7 @@ export default function Projects() {
     <section id="work" className="relative px-5 sm:px-8 md:px-12 pt-28 sm:pt-36 pb-10">
       <div className="max-w-5xl mx-auto mb-10">
         <FadeIn>
-          <p className="font-mono text-xs tracking-[0.3em] uppercase text-signal-cyan mb-6">03 &mdash; Work</p>
+          <p className="font-mono text-xs tracking-[0.3em] uppercase text-signal-cyan mb-6">04 &mdash; Work</p>
         </FadeIn>
         <FadeIn delay={0.05}>
           <h2 className="font-display grad-text font-bold leading-[0.95] tracking-tight text-[12vw] sm:text-6xl md:text-7xl">

@@ -7,7 +7,7 @@ export default function Achievements() {
     <section id="achievements" className="relative px-5 sm:px-8 md:px-12 py-24 sm:py-28 border-t border-hairline">
       <div className="max-w-5xl mx-auto">
         <FadeIn>
-          <p className="font-mono text-xs tracking-[0.3em] uppercase text-signal-cyan mb-10">Hackathons & recognition</p>
+          <p className="font-mono text-xs tracking-[0.3em] uppercase text-signal-cyan mb-10">05 &mdash; Achievements</p>
         </FadeIn>
         <div className="flex flex-col divide-y divide-hairline">
           {achievements.map((a, i) => (
