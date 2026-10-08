@@ -30,7 +30,7 @@ Interactive creative web project focused on playful frontend interaction and vis
 
 ### Sky Predict
 
-Weather intelligence web app built for NASA Space Apps Challenge 2025, featuring real-time data, forecasts, charts, climate trends, predictions, and an AI chatbot.
+Weather intelligence web app featuring real-time data, forecasts, charts, climate trends, predictions, and an AI chatbot.
 
 - **Technologies:** JavaScript, Weather API, data visualization, AI
 - **GitHub:** [Repository](https://github.com/the-nidhi-bhat/SKY-PREDICT-JARVIS)
