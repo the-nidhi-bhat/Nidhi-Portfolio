@@ -19,11 +19,11 @@ function App() {
       <Marquee />
       <About />
       <Skills />
+      <Leadership />
       <Projects />
+      <Achievements />
       <Education />
       <Certifications />
-      <Achievements />
-      <Leadership />
       <Contact />
       <Analytics />
     </div>
