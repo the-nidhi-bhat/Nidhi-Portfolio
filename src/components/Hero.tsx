@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, Github, Linkedin } from 'lucide-react'
+import { Download, Github, Linkedin } from 'lucide-react'
 import Avatar from './Avatar'
 import { profile } from '../data'
 
@@ -38,7 +38,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 0.6 }}
-          className="pointer-events-auto text-muted font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px] sm:mb-4"
+          className="pointer-events-auto text-muted font-light uppercase tracking-wide leading-snug max-w-[170px] sm:max-w-[240px] md:max-w-[320px] sm:mb-4"
           style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.05rem)' }}
         >
           {profile.tagline}
@@ -50,9 +50,6 @@ export default function Hero() {
           transition={{ delay: 0.65, duration: 0.6 }}
           className="pointer-events-auto flex flex-col sm:flex-row justify-end gap-2 sm:gap-3 w-full sm:w-auto"
         >
-          <a href="#work" className="inline-flex min-h-11 items-center gap-2 rounded-full border border-signal-violet bg-signal-violet/20 px-4 sm:px-5 font-mono text-[10px] sm:text-xs font-semibold uppercase tracking-[0.12em] text-mist shadow-[0_0_28px_rgba(124,92,252,0.35)] transition-colors hover:bg-signal-violet hover:text-white w-full sm:w-auto justify-center">
-            View Projects <ArrowDown size={14} />
-          </a>
           <a href={profile.github} target="_blank" rel="noreferrer" aria-label="Nidhi on GitHub" className="inline-flex min-h-11 items-center gap-2 rounded-full border border-hairline px-4 sm:px-5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.12em] text-mist hover:border-signal-cyan hover:text-signal-cyan transition-colors w-full sm:w-auto justify-center">
             <Github size={14} /> GitHub
           </a>
