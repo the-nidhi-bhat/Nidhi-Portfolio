@@ -72,7 +72,7 @@ function ProjectCard({ project, index, total }: { project: Project; index: numbe
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:items-end sm:ml-1">
             <div className="font-mono text-[10px] tracking-widest uppercase leading-tight text-center sm:text-left w-full sm:w-auto">
               <div className="text-muted mb-1">Achievement</div>
-              <div className="text-signal-amber">{project.achievement}</div>
+              <div className="text-signal-cyan">{project.achievement}</div>
             </div>
             <div className="flex items-center gap-3 w-full sm:w-auto justify-center sm:justify-end">
               {project.github && (
