@@ -21,7 +21,7 @@ export const about = {
   highlights: [
     { value: '8.95', label: 'Semester 1 SGPA' },
     { value: '8.42', label: 'Semester 2 SGPA' },
-    { value: '4', label: 'Featured Projects' },
+    { value: '7', label: 'Featured Projects' },
     { value: '2029', label: 'Expected Graduation' },
   ],
   currentlyLearning: ['React', 'Next.js', 'TypeScript', 'AI Integration', 'DSA'],
@@ -46,7 +46,7 @@ export const skillGroups = [
   {
     label: 'Data / Visualization',
     tag: 'DATA',
-    items: ['Chart.js', 'Data Visualization'],
+    items: ['Chart.js', 'Data Visualization', 'pandas'],
   },
   {
     label: 'Tools',
@@ -56,7 +56,7 @@ export const skillGroups = [
   {
     label: 'Cloud / Backend Exposure',
     tag: 'CLOUD',
-    items: ['Firebase', 'Supabase', 'AWS', 'Amazon Bedrock', 'FastAPI', 'PostgreSQL'],
+    items: ['Firebase', 'Supabase', 'AWS', 'Amazon Bedrock', 'FastAPI', 'PostgreSQL', 'AWS Lambda', 'API Gateway', 'PayPal Sandbox'],
   },
 ]
 
@@ -134,6 +134,43 @@ export const projects: Project[] = [
     achievement: 'Smart India Hackathon 2026 — Internal Round Cleared',
     github: 'https://github.com/the-nidhi-bhat/mplads-sentinel',
   },
+  {
+    index: '05',
+    name: 'FairHold',
+    category: 'Fintech / Payment Workflows',
+    status: 'SANDBOX PROTOTYPE',
+    problem: 'Buyers and sellers need a shared record of what counts as completed work before a milestone payment can move.',
+    description: 'Both parties agree on milestones and review delivery evidence. The signed-in workflow supports PayPal sandbox authorization, capture and void operations. The guided demo simulates payments.',
+    role: 'Built the buyer and seller interface and tested the demo workflow.',
+    tech: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'PayPal Sandbox'],
+    achievement: 'PayPal AI Hackathon 2026',
+    github: 'https://github.com/the-nidhi-bhat/fairhold',
+    live: 'https://fairhold-beta.vercel.app/demo',
+  },
+  {
+    index: '06',
+    name: 'LEGALX',
+    category: 'AI / LegalTech / Smart Contract Automation',
+    status: 'PROTOTYPE',
+    problem: 'A payment rule in a smart contract can differ from the review window or release condition the parties agreed to in writing.',
+    description: 'Turns agreement text into structured clauses and checks them against supported escrow rules. The public demo shows how a mismatch blocks simulated execution.',
+    role: 'Team LEXORA · Implemented the contract representation, Gemini extraction provider and evaluation tests.',
+    tech: ['TypeScript', 'React', 'Python', 'FastAPI', 'Gemini'],
+    achievement: 'HackIndia 2026 — AI for Lawyers',
+    github: 'https://github.com/the-nidhi-bhat/legalx',
+    live: 'https://legalx-three.vercel.app',
+  },
+  {
+    index: '07',
+    name: 'Campus Builder',
+    category: 'Student Project Matching',
+    status: 'LOCAL IMPLEMENTATION',
+    problem: 'Student teams need to find classmates with the skills their project is missing.',
+    description: 'Matches student profiles against open project requirements, explains skill coverage and supports invitations and join requests.',
+    role: 'Built team-capacity checks and refined the matching workflow.',
+    tech: ['Next.js', 'Supabase', 'Gemini'],
+    achievement: 'Implemented skill matching and team formation',
+  },
 ]
 
 export const moreProjects = [
@@ -149,24 +186,63 @@ export const moreProjects = [
     description: 'A student-focused wellness web application with features such as mood tracking, journaling, guided breathing, meditation and support resources.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
     github: 'https://github.com/the-nidhi-bhat/Mind-Haven',
+    live: 'https://the-nidhi-bhat.github.io/Mind-Haven/',
   },
   {
     name: 'Cryptography RSA',
     description: 'An RSA cryptography implementation exploring key generation, encryption and decryption. Secured 3rd place at National Mathematics Day.',
     tech: ['JavaScript', 'Cryptography', 'RSA'],
     github: 'https://github.com/the-nidhi-bhat/cryptography-rsa',
+    live: 'https://the-nidhi-bhat.github.io/cryptography-rsa/',
   },
   {
     name: 'Liminal',
     description: 'A design-focused experimental project exploring UI/UX patterns and interactions.',
     tech: ['TypeScript', 'React', 'Tailwind CSS'],
     github: 'https://github.com/the-nidhi-bhat/liminal',
+    live: 'https://the-nidhi-bhat.github.io/liminal/',
   },
   {
     name: 'CodexMatrix Redesign',
     description: 'Frontend redesign improving interface structure, visual systems, responsiveness, and UX.',
     tech: ['TypeScript', 'Frontend', 'UI/UX'],
     github: 'https://github.com/the-nidhi-bhat/codexmatrix-redesign-abtalks',
+    live: 'https://abtalks-ten.vercel.app',
+  },
+  {
+    name: 'Pixel Cat',
+    description: 'A desktop companion preview site with interactive coat choices and simulated pet states.',
+    tech: ['Next.js', 'TypeScript'],
+    github: 'https://github.com/the-nidhi-bhat/pixel-cat',
+    live: 'https://pixel-cat-six.vercel.app',
+  },
+  {
+    name: 'Aurenza',
+    description: 'Compares a shelf-life-first dispatch plan with an optimized one and explains where each batch of perishable produce should go.',
+    tech: ['Python'],
+    github: 'https://github.com/the-nidhi-bhat/Aurenza',
+    live: 'https://aurenza-five.vercel.app',
+  },
+  {
+    name: 'Earth Pulse',
+    description: 'Explores environmental trends and flags neighboring grid cells where measurements are moving in opposite directions.',
+    tech: ['Python', 'FastAPI', 'React', 'Vite'],
+    github: 'https://github.com/cyberhatc/earth-pulse',
+    live: 'https://earth-pulse-kkud.vercel.app',
+  },
+  {
+    name: 'SkillBridge',
+    description: 'Matches students to early-career roles, identifies skill gaps and tracks applications.',
+    tech: ['JavaScript', 'Express', 'MongoDB'],
+    github: 'https://github.com/the-nidhi-bhat/Skill-Bridge-',
+    live: 'https://skill-bridge-beta-inky.vercel.app',
+  },
+  {
+    name: 'OBLIVION',
+    description: 'An interactive cinematic story about an archive losing its inhabitants.',
+    tech: ['UI/UX'],
+    github: 'https://github.com/the-nidhi-bhat/OBLIVION',
+    live: 'https://oblivion-silk.vercel.app',
   },
 ]
 
@@ -222,6 +298,11 @@ export const leadership: LeadershipItem[] = [
     role: 'Volunteer · Firewall Team',
     organization: 'SIH 2025 Grand Finale',
     meta: 'Smart India Hackathon 2025',
+  },
+  {
+    role: 'Integration Lead',
+    organization: 'Team LEXORA · LEGALX',
+    description: 'Integrated the frontend and FastAPI backend with the contract intelligence work for HackIndia 2026.',
   },
 ]
 
